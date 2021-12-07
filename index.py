@@ -46,7 +46,7 @@ def subtract(a,b):
     return a - b
 
 @app.route('/multiply/<a>/<b>')
-def remove_route(a, b):
+def multiply_route(a, b):
     return {
         'result': multiply(a, b)
     }
@@ -64,7 +64,7 @@ def multiply(a,b):
     return a * b
 
 @app.route('/divide/<a>/<b>')
-def remove_route(a, b):
+def divide_route(a, b):
     return {
         'result': divide(a, b)
     }
